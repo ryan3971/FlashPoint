@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- android:id="@+id/menu" -->
+
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/menu"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical">
+	    
+	    
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ads="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/adLayout1"
+    		  android:background="#6B6B6B"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true">
+              
+              
+  <com.google.android.gms.ads.AdView android:id="@+id/adView1"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         ads:adSize="SMART_BANNER"
+                         ads:adUnitId="ca-app-pub-7529685879445121/8013124899hide"/>
+</LinearLayout>
+    
+    
+    <LinearLayout 
+        android:id="@+id/main1"
+    	android:layout_width="match_parent"
+    	android:orientation="horizontal"
+    	android:layout_height="0dp"
+    	android:baselineAligned="false"
+    	android:layout_weight="1">
+    	
+	<LinearLayout 
+    	android:layout_width="0dp"
+    	android:layout_height="match_parent"
+    	android:layout_weight="1.5">
+    	
+	    <ImageButton
+        android:id="@+id/explain_button"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        android:onClick="doMenuToExplain"
+        android:background="@null"
+		android:layout_weight="1"
+        android:src="@drawable/explain_button" />
+	    
+	    <ImageButton
+		    android:id="@+id/settings"
+       	 	android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:scaleType="fitXY"
+        	android:background="@null"
+		    android:layout_weight="1"
+        	android:onClick="doMenuToSettings"
+		    android:src="@drawable/setting" />
+    
+	</LinearLayout>
+
+	<LinearLayout 
+   		android:layout_width="0dp"
+    	android:layout_height="match_parent"
+    	android:layout_weight="2.5">
+
+		
+
+	</LinearLayout>
+	
+	<LinearLayout 
+   		android:layout_width="0dp"
+    	android:layout_height="match_parent"
+    	android:layout_weight="1">
+
+		<ImageButton
+		    android:id="@+id/erase_button"
+       	 	android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:background="@null"
+        	android:scaleType="fitXY"
+		    android:layout_weight="1"
+		    android:onClick="doMenuPageToErasePage"
+		    android:src="@drawable/eraser_button" />
+
+	</LinearLayout>
+	
+	<LinearLayout 
+   		android:layout_width="0dp"
+    	android:layout_height="match_parent"
+    	android:layout_weight="2.5">
+
+		
+
+	</LinearLayout>
+	<LinearLayout 
+   		android:layout_width="0dp"
+    	android:layout_height="match_parent"
+    	android:orientation="horizontal"
+    	android:baselineAligned="false"
+    	android:layout_weight="1.5">
+	    
+	    <LinearLayout 
+	   		android:layout_width="0dp"
+	    	android:layout_height="match_parent"
+    		android:orientation="horizontal"
+	    	android:layout_weight="1">
+    	
+	    <RelativeLayout
+			android:layout_width="wrap_content"
+    		android:layout_height="wrap_content">	
+
+		<ImageButton
+		    android:id="@+id/musicSoundOn"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+       		android:scaleType="fitXY"
+		    android:onClick="doMusic"
+		    android:background="@null"
+        	android:src="@drawable/sound_on"  />
+		
+		<ImageButton
+		    android:id="@+id/musicSoundOff"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+        	android:scaleType="fitXY"
+        	android:visibility="invisible"
+		    android:onClick="doMusic"
+		    android:background="@null"
+        	android:src="@drawable/sound_off" />
+		
+		</RelativeLayout>
+		</LinearLayout>
+		
+	    <LinearLayout 
+	   		android:layout_width="0dp"
+	    	android:layout_height="match_parent"
+	    	android:layout_weight="0.1">
+	    </LinearLayout>
+		
+		<LinearLayout 
+	   		android:layout_width="0dp"
+	    	android:layout_height="match_parent"
+	    	android:layout_weight="1">
+	    	
+		    <RelativeLayout
+			android:layout_width="wrap_content"
+    		android:layout_height="wrap_content">	
+
+		<ImageButton
+		    android:id="@+id/effectSoundOn"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+        	android:scaleType="fitXY"
+		    android:visibility="visible"
+		    android:onClick="doEffects"
+		    android:background="@null"
+        	android:src="@drawable/effects_on"/>
+		
+		<ImageButton
+		    android:id="@+id/effectSoundOff"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:visibility="invisible"
+        	android:scaleType="fitXY"
+		    android:onClick="doEffects"
+		    android:background="@null"
+        	android:src="@drawable/effects_off"/>
+		
+		</RelativeLayout>
+		</LinearLayout>
+		</LinearLayout>
+</LinearLayout>    
+
+	<LinearLayout 
+	    android:id="@+id/main2"
+   		android:layout_width="match_parent"
+    	android:orientation="horizontal"
+    	android:layout_height="0dp"
+    	android:layout_weight="2">
+    
+	<LinearLayout 
+    	android:layout_width="0dp"
+    	android:layout_height="match_parent"
+    	android:layout_weight="3">
+    
+	</LinearLayout>
+
+	<LinearLayout 
+   		android:layout_width="0dp"
+    	android:layout_height="match_parent"
+    	android:layout_weight="2">
+    
+	    <ImageView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@null"
+        android:src="@drawable/title2" />
+	    
+	</LinearLayout>
+	
+	<LinearLayout 
+   		android:layout_width="0dp"
+    	android:layout_height="match_parent"
+    	android:layout_weight="3">
+    	
+	</LinearLayout>
+	</LinearLayout>
+	
+	<LinearLayout 
+	   	android:id="@+id/main3"
+   		android:layout_width="match_parent"
+    	android:orientation="horizontal"
+    	android:layout_height="0dp"
+    	android:baselineAligned="false"
+    	android:layout_weight="2">
+	
+	    
+	<LinearLayout 
+    	android:layout_width="0dp"
+    	android:layout_height="match_parent"
+    	android:layout_weight="2">
+    
+	</LinearLayout>
+	<LinearLayout 
+   		android:layout_width="0dp"
+    	android:layout_height="match_parent"
+    	android:layout_weight="1">
+	    
+	    <ImageButton
+        android:id="@+id/rate"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@null"
+		android:scaleType="fitXY"
+        android:onClick="rateGameURL"
+        android:src="@drawable/rate_button" />
+    
+	</LinearLayout>
+	
+	<LinearLayout 
+   		android:layout_width="0dp"
+    	android:layout_height="match_parent"
+    	android:layout_weight="2">
+    	
+	</LinearLayout>
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:id="@+id/main4"
+   		android:layout_width="match_parent"
+    	android:orientation="horizontal"
+    	android:layout_height="0dp"
+    	android:baselineAligned="false"
+    	android:layout_weight="2">
+	
+	    
+	<LinearLayout 
+    	android:layout_width="0dp"
+    	android:layout_height="match_parent"
+    	android:layout_weight="1">
+    
+	</LinearLayout>
+
+	<LinearLayout 
+	    android:id="@+id/playLinear"
+   		android:layout_width="0dp"
+    	android:layout_height="match_parent"
+    	android:layout_weight="1">
+	    
+	    
+	    <ImageButton
+        android:id="@+id/play"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		android:scaleType="fitXY"
+        android:background="@null"
+        android:onClick="doSetGameFromMenu"
+        android:src="@drawable/play_button_menu" />
+	    
+	</LinearLayout>
+	
+	<LinearLayout 
+   		android:layout_width="0dp"
+    	android:layout_height="match_parent"
+    	android:layout_weight="1">
+    
+	</LinearLayout>
+	
+	<LinearLayout 
+   		android:layout_width="0dp"
+    	android:layout_height="match_parent"
+    	android:layout_weight="1">
+    	
+	    <ImageButton
+        android:id="@+id/leaderboard"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+		android:scaleType="fitXY"
+        android:background="@null"
+        android:onClick="connectGameServices"
+        android:src="@drawable/leaderboard_button_menu" />
+	    
+	</LinearLayout>
+	
+	<LinearLayout 
+   		android:layout_width="0dp"
+    	android:layout_height="match_parent"
+    	android:layout_weight="1">
+    
+	</LinearLayout>
+    
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:id="@+id/main5"
+   		android:layout_width="match_parent"
+    	android:orientation="horizontal"
+    	android:layout_height="0dp"
+    	android:baselineAligned="false"
+    	android:layout_weight="1">
+	
+	    
+	<LinearLayout 
+    	android:layout_width="0dp"
+    	android:layout_height="match_parent"
+    	android:layout_weight="5">
+	    
+	    
+	</LinearLayout>
+
+	</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

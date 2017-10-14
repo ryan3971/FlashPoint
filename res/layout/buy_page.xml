@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- android:id="@+id/menu" -->
+
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/layoutBuyErasePage"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical">
+	    
+	    
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ads="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/adLayout7"
+    		  android:background="#6B6B6B"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true">
+              
+              
+  <com.google.android.gms.ads.AdView android:id="@+id/adView7"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         ads:adSize="SMART_BANNER"
+                         ads:adUnitId="ca-app-pub-7529685879445121/8013124899hide"/>
+</LinearLayout>
+    
+    
+        
+
+	<LinearLayout 
+	    android:id="@+id/main2"
+   		android:layout_width="match_parent"
+    	android:orientation="horizontal"
+    	android:layout_height="0dp"
+    	android:layout_weight="2">
+    
+	<LinearLayout 
+    	android:layout_width="0dp"
+    	android:layout_height="match_parent"
+    	android:layout_weight="1.25">
+    
+	    <ImageButton
+	        android:id="@+id/eraseBack"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:scaleType="fitXY"
+	        android:background="@null"
+	        android:onClick="doErasePageToMenuPage"
+	        android:src="@drawable/home_erase_2" />
+	    
+	</LinearLayout>
+	
+	<LinearLayout 
+    	android:layout_width="0dp"
+    	android:layout_height="match_parent"
+    	android:layout_weight="1.25">
+    
+	</LinearLayout>
+
+	<LinearLayout 
+   		android:layout_width="0dp"
+    	android:layout_height="match_parent"
+    	android:layout_weight="2">
+    
+	     <ImageButton
+	            android:id="@+id/buy_5"
+	       	 	android:layout_width="fill_parent"
+	        	android:layout_height="fill_parent"
+	        	android:background="@null"
+	        	android:scaleType="fitXY"
+			    android:layout_weight="1"
+	        	android:onClick="doBuyErase5"
+	            android:src="@drawable/eraser_140" />
+	    
+	</LinearLayout>
+	
+	<LinearLayout 
+   		android:layout_width="0dp"
+    	android:layout_height="match_parent"
+    	android:layout_weight="2.5">
+    	
+	</LinearLayout>
+	</LinearLayout>
+	
+	<LinearLayout 
+	   	android:id="@+id/main3"
+   		android:layout_width="match_parent"
+    	android:orientation="horizontal"
+    	android:layout_height="0dp"
+    	android:baselineAligned="false"
+    	android:layout_weight="2.25">
+	
+	    
+	<LinearLayout 
+    	android:layout_width="0dp"
+    	android:layout_height="match_parent"
+    	android:layout_weight="0.7">
+    
+	</LinearLayout>
+	<LinearLayout 
+   		android:layout_width="0dp"
+    	android:layout_height="match_parent"
+    	android:layout_weight="1">
+	    
+	    <ImageButton
+	            android:id="@+id/buy_3"
+	       	 	android:layout_width="fill_parent"
+	        	android:layout_height="fill_parent"
+	        	android:background="@null"
+	        	android:scaleType="fitXY"
+			    android:layout_weight="1"
+	        	android:onClick="doBuyErase3"
+	            android:src="@drawable/eraser_25" />
+    
+	</LinearLayout>
+	
+	<LinearLayout 
+   		android:layout_width="0dp"
+    	android:layout_height="match_parent"
+    	android:layout_weight="1">
+	    
+	    <ImageButton
+	            android:id="@+id/buy_4"
+	       	 	android:layout_width="fill_parent"
+	        	android:layout_height="fill_parent"
+	        	android:background="@null"
+	        	android:scaleType="fitXY"
+			    android:layout_weight="1"
+	        	android:onClick="doBuyErase4"
+	            android:src="@drawable/eraser_65" />
+    
+	</LinearLayout>
+	
+	<LinearLayout 
+   		android:layout_width="0dp"
+    	android:layout_height="match_parent"
+    	android:layout_weight="0.7">
+    	
+	</LinearLayout>
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:id="@+id/main4"
+   		android:layout_width="match_parent"
+    	android:orientation="horizontal"
+    	android:layout_height="0dp"
+    	android:baselineAligned="false"
+    	android:layout_weight="2.25">
+	
+	    
+	<LinearLayout 
+    	android:layout_width="0dp"
+    	android:layout_height="match_parent"
+    	android:layout_weight="0.7">
+    
+	</LinearLayout>
+
+	<LinearLayout 
+	    android:id="@+id/playLinear"
+   		android:layout_width="0dp"
+    	android:layout_height="match_parent"
+    	android:layout_weight="1">
+	    
+	    <ImageButton
+	            android:id="@+id/buy_1"
+	       	 	android:layout_width="fill_parent"
+	        	android:layout_height="fill_parent"
+	        	android:background="@null"
+	        	android:scaleType="fitXY"
+			    android:layout_weight="1"
+	        	android:onClick="doBuyErase1"
+	            android:src="@drawable/eraser_5" />
+	    
+	    
+	</LinearLayout>
+	
+	<LinearLayout 
+   		android:layout_width="0dp"
+    	android:layout_height="match_parent"
+    	android:layout_weight="1">
+    	
+	    <ImageButton
+	            android:id="@+id/buy_2"
+	       	 	android:layout_width="fill_parent"
+	        	android:layout_height="fill_parent"
+	        	android:background="@null"
+	        	android:scaleType="fitXY"
+			    android:layout_weight="1"
+	        	android:onClick="doBuyErase2"
+	            android:src="@drawable/eraser_12" />
+	    
+	</LinearLayout>
+	
+	<LinearLayout 
+   		android:layout_width="0dp"
+    	android:layout_height="match_parent"
+    	android:layout_weight="0.7">
+    
+	</LinearLayout>
+    
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:id="@+id/main5"
+   		android:layout_width="match_parent"
+    	android:orientation="horizontal"
+    	android:layout_height="0dp"
+    	android:baselineAligned="false"
+    	android:layout_weight="0.5">
+	
+	    
+	<LinearLayout 
+    	android:layout_width="0dp"
+    	android:layout_height="match_parent">
+	    
+	</LinearLayout>
+
+	</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- android:id="@+id/layoutSettingsPage" -->
+
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/layoutSettingsPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:baselineAligned="false">
+	
+      
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ads="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/adLayout5"
+    		  android:background="#6B6B6B"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true">
+              
+              
+  <com.google.android.gms.ads.AdView android:id="@+id/adView5"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         ads:adSize="SMART_BANNER"
+                         ads:adUnitId="ca-app-pub-7529685879445121/8013124899hide"/>
+</LinearLayout>
+    
+      <LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:orientation="horizontal"
+    	android:layout_weight="1">
+    	
+    
+    <LinearLayout 
+        android:id="@+id/main1"
+    	android:layout_width="0dp"
+    	android:orientation="vertical"
+    	android:layout_height="match_parent"
+    	android:layout_weight="1">
+    	
+        
+	<LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="2">
+	        	
+	    <ImageView
+	            android:id="@+id/imageView1"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+       			android:scaleType="fitXY"
+        		android:background="@null"
+	            android:src="@drawable/logo_settings" />
+    	
+	</LinearLayout>
+	        
+	</LinearLayout>
+	
+	<LinearLayout 
+        android:id="@+id/main3"
+    	android:layout_width="0dp"
+    	android:orientation="vertical"
+    	android:layout_height="match_parent"
+    	android:layout_weight="1">
+    	
+	    <LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="0.9">
+    	
+    	
+	        <LinearLayout 
+		    	android:layout_width="0dp"
+		    	android:layout_height="match_parent"
+		    	android:layout_weight="7">
+    	
+	       </LinearLayout>
+	       
+	         <LinearLayout 
+		    	android:layout_width="0dp"
+		    	android:layout_height="match_parent"
+		    	android:layout_weight="5">
+	   
+	    <ImageButton
+		    android:id="@+id/settingsButton"
+       	 	android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:scaleType="fitXY"
+        	android:background="@null"
+		    android:layout_weight="1"
+        	android:onClick="doSettingsToMenu"
+		    android:src="@drawable/home_settings" />
+    	
+	       </LinearLayout>
+	    
+	     
+	</LinearLayout>
+	
+	    <LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="0.1">
+    	
+    	
+	</LinearLayout>
+        
+	<LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="1">
+	    
+	    <ImageButton
+		    android:id="@+id/settings_acheivement"
+       	 	android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:background="@null"
+        	android:scaleType="fitXY"
+		    android:layout_weight="1"
+        	android:onClick="doShowAchievements"
+		    android:src="@drawable/settings_acheivement" />
+	    
+	    <ImageButton
+		    android:id="@+id/credits"
+       	 	android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:background="@null"
+        	android:scaleType="fitXY"
+		    android:layout_weight="1"
+        	android:onClick="doCredits"
+		    android:src="@drawable/credits" />
+    	
+    	
+	</LinearLayout>
+
+	<LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="1">
+	    
+	    <ImageButton
+		    android:id="@+id/noAds"
+       	 	android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:background="@null"
+        	android:scaleType="fitXY"
+		    android:layout_weight="1"
+        	android:onClick="buyAdFee"
+		    android:src="@drawable/no_ads_settings" />
+	    
+	    <ImageButton
+		    android:id="@+id/instructionsButton"
+       	 	android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:background="@null"
+        	android:scaleType="fitXY"
+		    android:layout_weight="1"
+        	android:onClick="doInstructions"
+		    android:src="@drawable/instructions" />
+	    
+	</LinearLayout>
+	
+	
+	
+	    </LinearLayout>
+	</LinearLayout>
+      </LinearLayout>
+	
+	</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- android:id="@+id/game" -->
+
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical">
+	    
+	    
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ads="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/adLayout2"
+    		  android:background="#6B6B6B"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true">
+              
+              
+  <com.google.android.gms.ads.AdView android:id="@+id/adView2"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         ads:adSize="SMART_BANNER"
+                         ads:adUnitId="ca-app-pub-7529685879445121/8013124899hide"/>
+</LinearLayout>
+    
+	
+	<LinearLayout 
+        android:id="@+id/main1"
+    	android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:orientation="vertical"
+    	android:layout_weight="5">
+  
+	    
+	   <RelativeLayout
+   		 	android:layout_width="match_parent"
+    		android:layout_height="match_parent">
+    	
+	    
+	 <view
+    	android:id="@+id/drawing1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        class="game.Drawing" />
+	 
+	    
+	    
+   <include
+	    android:id="@+id/startMenu"
+	    layout="@layout/game1" />
+   
+   
+   <include
+	    android:id="@+id/game2"
+	    layout="@layout/game2" />
+   
+   
+	
+    	</RelativeLayout>
+	
+	</LinearLayout>
+	
+    </LinearLayout>
+</LinearLayout>

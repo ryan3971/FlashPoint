@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FlashPoint</string>         
+    <string name="onBackPressedActivity">My Message</string>
+    <string name="score">Score</string>
+    <string name="highscore">HighScore</string>
+    <string name="new_best">New Best!</string>
+    <string name="explination">At this point you have likely discovered that this game
+         is a lot harder then it initially appears. This is because this game takes advantage
+          of the flash lag effect. The flash lag effect is a visual phenomenon wherein a flash
+           and a moving object that appear in the same location are perceived to be displaced
+            from one another. The effect can however be compensated for with practice. Several
+             explanations for this simple illusion have been explored in the neuroscience literature
+              but it is not yet fully understood.</string>
+    
+    <string name="rta_dialog_title">Rate FlashPoint</string>
+    <string name="rta_dialog_message">If you enjoy using FlashPoint, please take a moment to rate it. Thanks for your support!</string>
+    <string name="rta_dialog_ok">Rate FlashPoint</string>
+    <string name="rta_dialog_cancel">Remind me later</string>
+    <string name="rta_dialog_no">No, thanks</string>
+    <string name="credits">In game music:\n\nHalf Bit Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons:\nBy Attribution 3.0\nhttp://creativecommons.org/licenses/by/3.0/\n\nMain page music and sound effects found at:\n\nhttp://www.freesfx.co.uk
+        
+    </string>
+    
+    		
+</resources>

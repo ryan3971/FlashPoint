@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/full_game"
+  		android:layout_width="match_parent"
+  		android:layout_height="match_parent"
+	    android:layout_gravity="center" >
+	    
+    <include
+	    android:id="@+id/background"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:visibility="invisible"
+	    layout="@layout/background" />
+    
+   
+    
+    <include
+	    android:id="@+id/game"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:visibility="invisible"
+	    layout="@layout/game" />
+    
+    
+   <include
+	    android:id="@+id/score"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:visibility="invisible"
+	    layout="@layout/score" />
+ 
+   <include
+	    android:id="@+id/main_menu"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:visibility="invisible"
+	    layout="@layout/main_menu" />
+   
+   
+    <include
+	    android:id="@+id/explain"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:visibility="invisible"
+	    layout="@layout/explain_page" />
+    
+    <include
+	    android:id="@+id/settingsPage"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:visibility="invisible"
+	    layout="@layout/settings" />
+    
+    <include
+	    android:id="@+id/buyErasePage"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:visibility="invisible"
+	    layout="@layout/buy_page" />
+    
+  
+    
+    <include
+	    android:id="@+id/logoPage"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    layout="@layout/logo_page" />
+    
+</RelativeLayout>

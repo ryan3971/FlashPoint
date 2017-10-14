@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- android:id="@+id/explainPage" -->
+
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/explainPage"					
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+    
+      
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ads="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/adLayout3"
+    		  android:background="#6B6B6B"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true">
+              
+              
+  <com.google.android.gms.ads.AdView android:id="@+id/adView3"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         ads:adSize="SMART_BANNER"
+                         ads:adUnitId="ca-app-pub-7529685879445121/8013124899hide"/>
+</LinearLayout>
+    
+      
+	<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">	    
+	    
+	    
+		   <include
+			    android:id="@+id/explain_page2"
+			    layout="@layout/explain_page2" />
+        
+		   <include
+			    android:id="@+id/explain_page1"
+			    layout="@layout/explain_page1" />
+		   
+		   <include
+			    android:id="@+id/explain_page3"
+			    layout="@layout/explain_page3" />
+		   
+    
+    </RelativeLayout>
+    </LinearLayout>
+    </LinearLayout>

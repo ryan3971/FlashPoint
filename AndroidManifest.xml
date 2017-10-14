@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="flash.point.flashpoint"
+    android:versionCode="3"
+    android:versionName="2" >
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="21" />
+    
+    <supports-screens
+                  android:smallScreens="false" />
+    
+    
+    <application
+        android:hardwareAccelerated="true"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo">
+		
+    <meta-data
+ 		android:name="com.google.android.gms.games.APP_ID"
+ 		android:value="@string/app_id" />
+	<meta-data
+ 		android:name="com.google.android.gms.version"
+ 		android:value="@integer/google_play_services_version" />
+	
+	<!-- Tell the system this app requires OpenGL ES 2.0. -->
+	<uses-feature android:glEsVersion="0x00020000" android:required="true" />
+	
+	<receiver android:process=":remote" android:name="DisplayNotification"></receiver>
+	
+        <activity
+            android:name="flash.point.flashpoint.MainActivity"
+            android:label="@string/app_name"  
+            android:screenOrientation="sensorLandscape"
+			android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.google.android.gms.ads.AdActivity"
+            	 android:screenOrientation="landscape"
+             	android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        
+        
+        
+        <receiver android:name="flash.point.flashpoint.NotificationAfterReboot" android:enabled="true">
+            <intent-filter>
+                    <action android:name ="android.intent.action.BOOT_COMPLETED"></action>
+            </intent-filter>
+    </receiver>
+        
+    </application>
+    
+	<uses-permission android:name="android.permission.INTERNET"/>
+ 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+ 	<uses-permission android:name="com.android.vending.BILLING" />
+ 	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+ 	
+</manifest>
